@@ -55,3 +55,6 @@ body, html {
     color: rgb(223, 223, 223);
     background-color: rgba(131, 70, 20, 0.8);
   }
+  .container {
+    display: flex;
+  }
