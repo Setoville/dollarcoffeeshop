@@ -11,8 +11,7 @@
 
 <div class="bg">
     <div class="title">
-        Dollar<br>
-        Coffee<br>
+        Dollar Coffee<br>
         Shop
     </div>
 </div>
@@ -21,12 +20,18 @@
     <div class="menutitle">
         Our Menu
     </div>
-    <div class="menuitem">
+    <div id="menuitems">
     </div>
-
 </div>
 
 
 
 </body>
 </html>
+<script>
+    const element = document.getElementById("menuitems");
+    const url = "http://192.168.0.15:5000/";
+    fetch(url).then(function(data){
+        console.log(data);
+    });
+</script>
