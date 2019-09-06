@@ -23,29 +23,7 @@
     <div id="menuitems">
     </div>
 </div>
-
-
-
 </body>
 </html>
-<script>
-    const menuitems = document.getElementById("menuitems");
-    const url = "http://192.168.0.15:5000/menu";
-    fetch(url).then((resp) => resp.json()).then(function(data){
-        //for each inside of data
-        return data.map(function(coffeeItem){
-            let dv = document.createElement("div");
-            dv.className = "container";
-            menuitems.append(dv);
-            console.log(dv);
-        });
+<script src="makeMenuList.js"></script>
 
-        data.forEach(element => {
-        });
-
-        
-    });
-    function append(parent, el){
-        parent.appendChild(el);
-    }
-</script>
