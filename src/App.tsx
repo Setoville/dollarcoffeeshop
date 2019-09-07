@@ -6,8 +6,17 @@ interface MenuItem {
   type: string;
 }
 
-class App extends React.Component {
+interface State {
+  menuItems?: MenuItem[];
+}
+
+class App extends React.Component<{}, State> {
   url = "https://dollar-coffee-shop-api.herokuapp.com/menu";
+
+  constructor(props: {}) {
+    super(props);
+    this.state = {};
+  }
 
   private newDivWithClassName(name: string) {
     let el = document.createElement("div");
@@ -60,7 +69,7 @@ class App extends React.Component {
         </div>
         <div className="menu">
           <div className="menutitle">Our Menu</div>
-          <div className="menuitem"></div>
+          <div id="menuitems"></div>
         </div>
       </div>
     );
