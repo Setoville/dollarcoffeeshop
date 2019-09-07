@@ -66,6 +66,13 @@ class App extends React.Component<{}, State> {
             <br />
             Shop
           </div>
+          <div className="subtitle">
+            "We WILL 
+            <br />
+            spell your
+            <br />
+            name wrong!"
+          </div>
         </div>
         <div className="menu">
           <div className="menutitle">Our Menu</div>
