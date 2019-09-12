@@ -47,7 +47,7 @@ class App extends React.Component<{}, State> {
           coffeeItemDiv.appendChild(coffeeDescDiv);
           
           let coffeeTypeDiv = self.newDivWithClassName("coffeeColumn");
-          coffeeTypeDiv.innerHTML = coffeeItem.types.join();
+          coffeeTypeDiv.innerHTML = coffeeItem.types.join(", ");
           coffeeItemDiv.appendChild(coffeeTypeDiv);
           //append to menu items
           if (menuItems !== null) {
