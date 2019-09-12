@@ -11,7 +11,7 @@ interface State {
 }
 
 class App extends React.Component<{}, State> {
-  url = "https://dollar-coffee-shop-api.herokuapp.com/menu";
+  url = "https://dollar-coffee-shop-api.herokuapp.com/front_page/menu";
 
   constructor(props: {}) {
     super(props);
@@ -59,10 +59,9 @@ class App extends React.Component<{}, State> {
     return (
       <div className="App">
         <div className="bg">
-          <div className="title">
-          </div>
+          <div className="title"></div>
           <div className="subtitle">
-            "We WILL 
+            "We WILL
             <br />
             spell your
             <br />
