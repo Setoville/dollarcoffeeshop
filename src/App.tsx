@@ -60,11 +60,6 @@ class App extends React.Component<{}, State> {
       <div className="App">
         <div className="bg">
           <div className="title">
-            Dollar
-            <br />
-            Coffee
-            <br />
-            Shop
           </div>
           <div className="subtitle">
             "We WILL 
