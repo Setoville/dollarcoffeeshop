@@ -3,7 +3,8 @@ import "./App.css";
 
 interface MenuItem {
   coffee: string;
-  type: string;
+  types: string[];
+  description: string;
 }
 
 interface State {
@@ -36,20 +37,22 @@ class App extends React.Component<{}, State> {
           let coffeeItemDiv = self.newDivWithClassName("container");
 
           //make a coffee name div within that container
-          let coffeeNameDiv = self.newDivWithClassName("coffeeName");
+          let coffeeNameDiv = self.newDivWithClassName("coffeeColumn");
           coffeeNameDiv.innerHTML = coffeeItem.coffee;
           coffeeItemDiv.appendChild(coffeeNameDiv);
 
           //make a coffee type div within that container
-          let coffeeTypeDiv = self.newDivWithClassName("coffeeType");
-          coffeeTypeDiv.innerHTML = coffeeItem.type;
+          let coffeeDescDiv = self.newDivWithClassName("coffeeColumn");
+          coffeeDescDiv.innerHTML = coffeeItem.description;
+          coffeeItemDiv.appendChild(coffeeDescDiv);
+          
+          let coffeeTypeDiv = self.newDivWithClassName("coffeeColumn");
+          coffeeTypeDiv.innerHTML = coffeeItem.types.join();
           coffeeItemDiv.appendChild(coffeeTypeDiv);
-
           //append to menu items
           if (menuItems !== null) {
             menuItems.appendChild(coffeeItemDiv);
           }
-          console.log(coffeeItem.type);
           return data;
         });
       });
@@ -70,6 +73,17 @@ class App extends React.Component<{}, State> {
         </div>
         <div className="menu">
           <div className="menutitle">Our Menu</div>
+          <div className="menuHeader container">
+            <div className="coffeeColumn">
+              Coffee Name
+            </div>
+            <div className="coffeeColumn">
+              Description
+            </div>
+            <div className="coffeeColumn">
+              Types
+            </div>
+           </div>
           <div id="menuitems"></div>
         </div>
       </div>
