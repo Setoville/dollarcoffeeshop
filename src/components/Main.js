@@ -15,8 +15,8 @@ class Main extends React.Component {
           </p>
           <div class="horizontal_menu_container">
             <Link to="/menu" class="horizontal_menu_item">Menu</Link>
-            <Link to="/Order" class="horizontal_menu_item">Order</Link>
-            <Link to="/About" class="horizontal_menu_item">About</Link>
+            <Link to="/order" class="horizontal_menu_item">Order</Link>
+            <Link to="/about" class="horizontal_menu_item">About</Link>
           </div>
         </header>
       </div>
