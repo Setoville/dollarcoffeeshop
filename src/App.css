@@ -1,95 +1,22 @@
-.bg {
-  /* The image used */
-  background-image: url("./img/bean.jpg");
-
-  /* Full height */
-  height: 99%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 10px solid black;
-}
-
-.title {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 400px;
-  height: 437px;
-  border: 5px solid #000000;
-  background-image: url("./img/logo.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.subtitle {
-  position: absolute;
-  top: 30%;
-  right: 5%;
-  width: 400px;
-  height: 300px;
-  font-size: 50px;
-  font-family: sans-serif;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.menu {
-  background-image: url("./img/yoff.jpg");
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.menutitle {
-  position: relative;
-  top: 10%;
-  left: 10%;
-  width: 800px;
-  height: 100px;
-  font-size: 50px;
-  font-family: sans-serif;
-  text-align: center; 
-  border: 5px solid #2b0d0d;
-  background-color: rgba(255,255,255, 1);
-  margin-bottom: 10px;
-}
-.menuHeader{
-  position: relative;
-  top: 10%;
-  left: 10%; 
-  width: 800px;
+.App {
   text-align: center;
-  font-size: 30px;
-  font-family: sans-serif;
-  border: 5px solid #2b0d0d;
-  background-color: rgba(255,255,255, 1);
-  margin-bottom: 10px;
 }
-#menuitems{
-  position: relative;
-  top: 10%;
-  left: 10%;  
-  width: 800px;
-  height: 100px;
-  display: block;
-  font-family: sans-serif;
-  font-size: 16px;
-  border: 5px solid #2b0d0d;
-  background-color: rgba(255,255,255, 1);
+
+.App-logo {
+  height: 40vmin;
 }
-.container{
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
-  flex: 1 1 0px;
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
-.coffeeColumn{
-  flex: 1;
-  text-align:center;
+
+.App-link {
+  color: #09d3ac;
 }
