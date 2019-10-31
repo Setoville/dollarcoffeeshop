@@ -35,7 +35,9 @@
   display: flex;
   flex-wrap: nowrap;
 }
-
+.current_main_item {
+  text-decoration: underline;
+}
 .horizontal_main_item {
   width: 100px;
   margin: 10px;
@@ -45,7 +47,14 @@
   color:white;
   text-decoration: none;
 }
-
+.horizontal_menu_item_header{
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  color:white;
+  text-decoration: underline;
+}
 .horizontal_menu_item {
   width: 300px;
   margin: 10px;

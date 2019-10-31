@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios';
-
+import { Link } from "react-router-dom";
+import './Style.css';
 class Menu extends React.Component {
   state = {
     coffee_data: []
@@ -43,10 +44,22 @@ class Menu extends React.Component {
   render() {
       return(
         <header className="Menu-header">
+          <div class="horizontal_menu_container">
+            <Link to="/" class="horizontal_main_item">Home</Link>
+            <Link to="/menu" class="current_main_item horizontal_main_item ">Menu</Link>
+            <Link to="/order" class="horizontal_main_item">Order</Link>
+            <Link to="/about" class="horizontal_main_item">About</Link>
+          </div>
         <p id="coffee_title">
            DOLLAR<h id="coffee_name">COFFEE</h>SHOP
         </p>
-        <div id="vertical_menu_container"></div>
+        <div id="vertical_menu_container">
+          <div class="horizontal_menu_container">
+            <div class="horizontal_menu_item_header">Name</div>
+            <div class="horizontal_menu_item_header">Description</div>
+            <div class="horizontal_menu_item_header">Price $</div>
+          </div>
+        </div>
       </header>
       );  
   }

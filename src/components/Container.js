@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Main from "./Main";
 import Menu from "./Menu";
 import Order from "./Order";
+import Register from "./Register";
 import About from "./About";
 
 function Container() {
@@ -11,7 +12,7 @@ function Container() {
         <Switch>
           <Route exact path="/" component={ Main } />
           <Route path="/menu" component={ Menu } />
-          <Route path="/order" component={ Order } />
+          <Route path="/order" component={ Register } />
           <Route path="/About" component={ About } />
         </Switch>
     </div>
