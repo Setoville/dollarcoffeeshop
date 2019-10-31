@@ -17,12 +17,12 @@
   font-size: calc(10px + 2vmin);
   color: white; 
 }
-.vertical_menu_container{
+#vertical_menu_container{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.vertical_menu_item {
+#vertical_menu_item {
   width: 500px;
   margin: 10px;
   text-align: center;
@@ -35,7 +35,8 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.horizontal_menu_item {
+
+.horizontal_main_item {
   width: 100px;
   margin: 10px;
   text-align: center;
@@ -44,7 +45,16 @@
   color:white;
   text-decoration: none;
 }
-.horizontal_menu_item:hover{
+
+.horizontal_menu_item {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+  color:white;
+  text-decoration: none;
+}
+.horizontal_main_item:hover{
   text-decoration: underline;
 }
 #coffee_title{

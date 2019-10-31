@@ -13,9 +13,9 @@ class Main extends React.Component {
              DOLLAR<h id="coffee_name">COFFEE</h>SHOP
           </p>
           <div class="horizontal_menu_container">
-            <Link to="/menu" class="horizontal_menu_item">Menu</Link>
-            <Link to="/order" class="horizontal_menu_item">Order</Link>
-            <Link to="/about" class="horizontal_menu_item">About</Link>
+            <Link to="/menu" class="horizontal_main_item">Menu</Link>
+            <Link to="/order" class="horizontal_main_item">Order</Link>
+            <Link to="/about" class="horizontal_main_item">About</Link>
           </div>
         </header>
       </div>
