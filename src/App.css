@@ -16,23 +16,25 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.horizontal_menu_container > div {
+.horizontal_menu_item {
   width: 100px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+  color:white;
+  text-decoration: none;
 }
-.horizontal_menu_container > div:hover{
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: rgb(237, 79, 79);;
+.horizontal_menu_item:hover{
+  text-decoration: underline;
 }
 #coffee_title{
   font-size: 50px;
+  text-decoration-line: underline;
 }
 #coffee_name {
   color: rgb(237, 79, 79);
+  
 }
 .App-link {
   color: #09d3ac;
